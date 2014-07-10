@@ -1,16 +1,15 @@
 {
   "name": "react-image-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React component to load images with a little finesse",
   "main": "lib/index.js",
   "scripts": {
+    "postinstall": "jsxc src/ lib/",
     "build": "jsxc src/ lib/",
     "watch": "jsxc --watch src/ lib/"
   },
   "dependencies": {
-    "react": "^0.10.0"
-  },
-  "devDependencies": {
+    "react": "^0.10.0",
     "jsxc": "^0.10.0"
   },
   "repository": {
