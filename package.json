@@ -4,12 +4,14 @@
   "description": "React component to load images with a little finesse",
   "main": "lib/index.js",
   "scripts": {
-    "postinstall": "jsxc src/ lib/",
+    "prepublish": "npm build",
     "build": "jsxc src/ lib/",
     "watch": "jsxc --watch src/ lib/"
   },
   "dependencies": {
-    "react": "^0.10.0",
+    "react": "^0.10.0"
+  },
+  "devDependencies": {
     "jsxc": "^0.10.0"
   },
   "repository": {
