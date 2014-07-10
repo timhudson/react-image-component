@@ -1,0 +1,26 @@
+{
+  "name": "react-image-component",
+  "version": "0.1.0",
+  "description": "React component to load images with a little finesse",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "jsxc src/ lib/",
+    "watch": "jsxc --watch src/ lib/"
+  },
+  "dependencies": {
+    "react": "^0.10.0"
+  },
+  "devDependencies": {
+    "jsxc": "^0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/timhudson/react-image-component.git"
+  },
+  "homepage": "https://github.com/timhudson/react-image-component",
+  "author": {
+    "name": "Tim Hudson",
+    "email": "tim.hudson15@gmail.com"
+  },
+  "license": "MIT"
+}
