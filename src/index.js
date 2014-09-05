@@ -20,12 +20,12 @@ module.exports = React.createClass({
       backgroundPosition: 'center center',
       backgroundImage: 'url(' + this.props.src + ')',
       opacity: this.state.loaded ? 100 : 0,
-      transition: 'opacity 0.6s ease'
+      transition: 'opacity '+ (this.props.fadeTime || 0.6) + 's ease'
     }
 
     return (
       <div className='component-image' style={divStyles} >
-        <div style={imageStyles} />
+        <div style={this.props.noFade ? null : imageStyles} />
       </div>
     )
   },
