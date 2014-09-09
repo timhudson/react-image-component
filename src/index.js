@@ -20,7 +20,7 @@ module.exports = React.createClass({
       backgroundPosition: 'center center',
       backgroundImage: 'url(' + this.props.src + ')',
       opacity: this.state.loaded ? 100 : 0,
-      transition: 'opacity 0.6s ease'
+      transition: this.props.transition || 'opacity 0.6s ease'
     }
 
     return (
