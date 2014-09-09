@@ -24,9 +24,9 @@ module.exports = React.createClass({
     }
 
     return (
-      <div className='component-image' style={divStyles} >
-        <div style={imageStyles} />
-      </div>
+      React.DOM.div({className: 'component-image', style: divStyles},
+        React.DOM.div({style: imageStyles})
+      )
     )
   },
   componentDidMount: function() {

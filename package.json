@@ -2,17 +2,9 @@
   "name": "react-image-component",
   "version": "0.2.0",
   "description": "React component to load images with a little finesse",
-  "main": "lib/index.js",
-  "scripts": {
-    "prepublish": "npm build",
-    "build": "jsxc src/ lib/",
-    "watch": "jsxc --watch src/ lib/"
-  },
+  "main": "index.js",
   "dependencies": {
     "react": "^0.10.0"
-  },
-  "devDependencies": {
-    "jsxc": "^0.10.0"
   },
   "repository": {
     "type": "git",
