@@ -1,6 +1,6 @@
 {
   "name": "react-image-component",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "React component to load images with a little finesse",
   "main": "lib/index.js",
   "scripts": {
