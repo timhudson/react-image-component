@@ -1,17 +1,16 @@
-/** @jsx React.DOM */
-var React = require('react')
+var React = require('react');
 
 module.exports = React.createClass({
   getInitialState: function() {
     return {
       loaded: false
-    }
+    };
   },
   render: function() {
     var divStyles = {
       position: 'relative',
       paddingBottom: Math.round(100 / Number(this.props.aspectRatio)) + '%'
-    }
+    };
 
     var imageStyles = {
       position: 'absolute',
@@ -21,22 +20,27 @@ module.exports = React.createClass({
       backgroundImage: 'url(' + this.props.src + ')',
       opacity: this.state.loaded ? 100 : 0,
       transition: this.props.transition || 'opacity 0.6s ease'
-    }
+    };
 
     return (
-      React.DOM.div({className: 'component-image', style: divStyles},
-        React.DOM.div({style: imageStyles})
+      React.DOM.div({
+          className: 'component-image' + (!this.state.loaded ? ' component-image--loading' : ''),
+          style: divStyles
+        },
+        React.DOM.div({
+          style: imageStyles
+        })
       )
-    )
+    );
   },
   componentDidMount: function() {
-    var self = this
-    var img = document.createElement('img')
+    var self = this;
+    var img = document.createElement('img');
 
     img.onload = function() {
-      self.setState({loaded: true})
-    }
+      self.setState({loaded: true});
+    };
 
-    img.src = this.props.src
+    img.src = this.props.src;
   }
-})
+});
