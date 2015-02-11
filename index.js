@@ -23,8 +23,13 @@ module.exports = React.createClass({
     }
 
     return (
-      React.DOM.div({className: 'component-image', style: divStyles},
-        React.DOM.div({style: imageStyles})
+      React.DOM.div({
+          className: 'component-image' + (!this.state.loaded ? ' component-image--loading' : ''),
+          style: divStyles
+        },
+        React.DOM.div({
+          style: imageStyles
+        })
       )
     )
   },
