@@ -4,7 +4,7 @@
   "description": "React component to load images with a little finesse",
   "main": "index.js",
   "dependencies": {
-    "react": "^0.12.1"
+    "react": "^0.13.3"
   },
   "repository": {
     "type": "git",
