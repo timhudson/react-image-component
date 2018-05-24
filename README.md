@@ -15,6 +15,7 @@ const Image = require('react-image-component')
 React.renderComponent(
   <Image
     src={'http://pugholdit.herokuapp.com/500x400.jpg'}
+    transition={'opacity 0.6s ease'}
     aspectRatio={0.8}
   />,
   mountNode
